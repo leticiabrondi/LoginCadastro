@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOME | Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="theme-toggle" id="toggleTheme">🌙</button>
+
+  <h1 class="title">Crie sua conta</h1>
+
+  <div class="container">
+    <form action="#" method="post">
+      <input type="text" name="nome_completo" placeholder="Nome completo" required />
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+
+      <!-- Seleção de sexo biológico -->
+      <select name="sexo" required>
+        <option value="" disabled selected>Sexo biológico</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <div class="form-group">
+        <select name="estado" id="estado" required>
+          <option value="" disabled selected hidden>Selecione seu estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </div>
+
+      <!-- Interesses -->
+      <div class="interests">
+        <label>Selecione seus interesses:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" name="interesses" value="tecnologia" id="tecnologia" />
+          <label for="tecnologia">Tecnologia</label>
+
+          <input type="checkbox" name="interesses" value="esportes" id="esportes" />
+          <label for="esportes">Esportes</label>
+
+          <input type="checkbox" name="interesses" value="musica" id="musica" />
+          <label for="musica">Música</label>
+
+          <input type="checkbox" name="interesses" value="viagens" id="viagens" />
+          <label for="viagens">Viagens</label>
+
+          <input type="checkbox" name="interesses" value="arte" id="arte" />
+          <label for="arte">Arte</label>
+
+          <input type="checkbox" name="interesses" value="filosofia" id="filosofia" />
+          <label for="filosofia">Filosofia</label>
+        </div>
+      </div>
+
+      <input type="password" name="senha" placeholder="Criar senha" required />
+      <input type="password" name="senha" placeholder="Confirmar senha" required />
+
+      <input type="submit" value="Cadastrar" />
+      <a href="index.html" class="register-btn">Fazer login</a>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
