@@ -6,7 +6,7 @@
   <title>HOME | Cadastro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="light"> <!-- Modo claro padrão -->
   <button class="theme-toggle" id="toggleTheme">🌙</button>
 
   <h1 class="title">Crie sua conta</h1>
@@ -17,7 +17,6 @@
       <input type="text" name="username" placeholder="Username" required />
       <input type="email" name="email" placeholder="E-mail" required />
 
-      <!-- Seleção de sexo biológico -->
       <select name="sexo" required>
         <option value="" disabled selected>Sexo biológico</option>
         <option value="masculino">Masculino</option>
@@ -28,6 +27,7 @@
       <div class="form-group">
         <select name="estado" id="estado" required>
           <option value="" disabled selected hidden>Selecione seu estado</option>
+          <!-- opções de estado -->
           <option value="AC">Acre</option>
           <option value="AL">Alagoas</option>
           <option value="AP">Amapá</option>
@@ -58,7 +58,6 @@
         </select>
       </div>
 
-      <!-- Interesses -->
       <div class="interests">
         <label>Selecione seus interesses:</label>
         <div class="checkbox-group">
